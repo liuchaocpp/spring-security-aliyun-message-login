@@ -1,0 +1,20 @@
+server:
+  port: 9999
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://192.168.56.10/mobile?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+      username: root
+      password: root
+  redis:
+    host: 192.168.56.10
+
+sms:
+  aliyun:
+#    endpoint: oss-cn-chengdu.aliyuncs.com
+#    bucketName: edu-liuchao
+    accessKeyId: LTAI4G6nbXhZuEfz4jjGnhE5
+    accessSecret: o4gojeDoqjoEEyLW8DIpFrvzxYbNZT
